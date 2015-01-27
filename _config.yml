@@ -19,7 +19,7 @@ github:
   repo:           https://github.com/azeemansar/azeemansar.github.io
 
 pages_list:       
-  Archive: '/archive/'
+  Me: '/me/'
   Feed: '/atom.xml'
 
 # Allow URL Redirects: 
