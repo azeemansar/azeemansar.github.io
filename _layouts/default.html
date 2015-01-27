@@ -4,7 +4,7 @@
   {% include head.html %}
   {% include google_analytics.html %}
 
-  <body>
+  <body style="margin-bottom:80px;">
 
     <div class="container content">
       <div class="masthead">
@@ -20,9 +20,17 @@
 
       {{ content }}
 
-      <div class="footer">
+      <div class="footer" style="position:fixed;height:60px;background-color:white;bottom:0px;left:0px;right:0px;margin-bottom:0px;padding-top:10px;font-size:80%;text-align:center;">
+
+        <form action="http://azeemansar.us10.list-manage2.com/subscribe/post" method="POST" style="margin:0;padding:0;">
+          <input type="hidden" name="u" value="175bcbfca2092857f16934f3a">
+          <input type="hidden" name="id" value="75fc381fca">
+          <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+          <input type="submit" class="button" name="submit" value="subscribe">
+        </form>       
+
         <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+          &copy; azeem ansar {{ site.time | date: '%Y' }}
         </p>
       </div>
     </div>
