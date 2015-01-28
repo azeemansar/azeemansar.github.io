@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Third Test Post
-permalink: “third-post"
+permalink: "third-post"
 ---
 
 An h1 header

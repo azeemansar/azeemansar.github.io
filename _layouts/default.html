@@ -5,6 +5,15 @@
   {% include google_analytics.html %}
 
   <body style="margin-bottom:100px;">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=114313622107878&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  
 
     <div class="container content">
       <div class="masthead">
@@ -28,10 +37,13 @@
           <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" placeholder="Your Email...">
           <input type="submit" class="button" name="submit" value="subscribe to updates" style="color:#fff;background-color:#000;border:1px solid #000;cursor:pointer;">
         </form>       
+        <span>
+          &copy; azeem ansar {{ site.time | date: '%Y' }} // 
+        </span>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+        
 
-        <p>
-          &copy; azeem ansar {{ site.time | date: '%Y' }}
-        </p>
+        
       </div>
     </div>
 
