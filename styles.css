@@ -1,0 +1,84 @@
+body {
+    /* font-family: Arial, sans-serif;*/
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px;
+    line-height: 1.25;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* To align content to the top */
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+    padding: 0 20px; /* Optional: Padding for smaller screens */
+
+}
+
+.content-container {
+    width: 100%;          /* Ensures the container takes full width on mobile */
+    padding: 0 20px;      /* Add some space on the sides for mobile for better readability */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+
+header, section, footer {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    /* border-bottom: 2px solid #333; */
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: dash;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/*ul {
+    margin: 0;
+}
+ul.dashed {
+    list-style-type: none;
+}
+ul.dashed > li {
+    text-indent: -20px;
+}
+ul.dashed > li:before {
+    content: "-";
+    text-indent: -20px;
+}*/
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#social-media img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* For screens larger than 768px (typical breakpoint between mobile and tablet/desktop) */
+@media (min-width: 768px) {
+    .content-container {
+        width: 50%;           /* Tightens the width to 70% of the viewport on desktop */
+        max-width: 1000px;    /* Sets an absolute maximum width if you wish */
+        margin: 0 auto;       /* Centers the container horizontally */
+        padding: 50px;           /* Remove the mobile-specific padding */
+    }
+}
+
+

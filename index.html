@@ -1,37 +1,45 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azeem Ansar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-container">
+    <header>
+        <h1>Azeem Ansar</h1>
+    </header>
+    <section id="about-me">
+        <p>
+            I'm a product-minded engineering leader & builder. Today I'm the CTO of <a href="attuneinsurance.com">Attune</a>, we make insurance easier for small businesses (Two Sigma was our lead investor, <a href="forbes.com/sites/tonybradley/2021/10/05/coalition-acquires-attune-to-shape-the-future-of-insurance/">exited/acquired in 2021 by Coalition</a>).</p>
+        <p>Before this, I worked on local products at Facebook, on growth engineering at Venmo, and on building several startups prior (including the incubator that birthed Tinder).
+        </p>
+        <p>
+            I majored in math and minored in physics and computer science at the University of Pennsylvania.
+        </p>
+    </section>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <section id="interests">
+    I care about...
+    <ul class="dashed">
+      <li><strong>Markets.</strong> Liquid markets with healthy price discovery yield truth and fairness. Atm I'm re-reading <a href="https://www.amazon.com/Man-Who-Solved-Market-Revolution-ebook/dp/B07P1NNTSD"> The Man Who Solved The Market</a>, about Jim Simons and Renaissance Technologies.</li>
+      <li><strong>Future.</strong> I read a lot of science fiction. I just picked <a href="https://www.amazon.com/Consider-Phlebas-Culture-Novel-Book-ebook/dp/B0013TX6FI">Consider Phlebas</a> back up.</li>
+      <li><strong>Tail Risk.</strong> What looming risks are severe but seem unlikely?</li>
+      <li><strong>Engineering.</strong> Software or otherwise, but mostly software.</li>
+      <li><strong>Wellness.</strong> I want to stay alive, ideally for as long and healthily as possible.</li>
+    </ul>
+    </section>
+    <section id="contact">
+        <p>DM me on <a href="https://twitter.com/azeemansar">twitter</a> or email me: <a href="mailto:a@azeemansar.com">a@azeemansar.com</a>. If you do, things we can talk about...</p>
+        <ul class="dashed">
+          <li><strong>Invest.</strong> I angel invest in early stage companies, with a slight (but not singular) focus on fintech.</li>
+          <li><strong>Operate.</strong> I can help you think about building and growing your engineering and/or product teams.</li>
+          <li><strong>Friends.</strong> Do you share any interests above? Reach out if so!</li>
+        </ul>
+    </section>
+    </div>
+</body>
+</html>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
